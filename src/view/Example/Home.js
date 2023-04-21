@@ -1,5 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router";
+import logo from '../../assets/imgages/profile.png'
 
 class Home extends React.Component{
 
@@ -14,7 +15,11 @@ class Home extends React.Component{
 
     render() {
         return (
-            <div> Hello World</div>
+            <>
+                <div> Hello World</div>
+                <img src={logo} style={{marginTop: '20px'}}/>
+            </>
+            
         )
     }
 }
